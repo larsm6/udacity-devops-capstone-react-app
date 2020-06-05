@@ -11,11 +11,13 @@
       "ports": [
          {
             "port":80,
-            "targetPort":80
+            "targetPort":80,
+            "name": "http"
          },
          {
             "port":443,
-            "targetPort":80
+            "targetPort":80,
+            "name": "https"
          }
       ],
       "selector":{
