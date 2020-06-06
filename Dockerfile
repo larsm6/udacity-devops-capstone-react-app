@@ -10,4 +10,4 @@ FROM mhart/alpine-node:12
 RUN yarn global add serve
 WORKDIR /app
 COPY --from=builder /app/build .
-CMD ["serve", "-p", "80", "-s", "."]
+CMD ["serve", "-p", "443", "-s", "."]
